@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     app: flask-be
-  type: NodePort
   ports:
   - port: 5000
     targetPort: 5000
+    protocol: TCP
