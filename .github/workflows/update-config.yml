@@ -18,7 +18,7 @@ jobs:
       id: imgupd
       uses: mikefarah/yq@master
       with:
-        cmd: yq eval '.spec.template.spec.containers[0].image = "${{ steps.string.outputs.lowercase }}"' -i flask-be/deployment.yml
+        cmd: yq eval '.spec.template.spec.containers[0].image = "${{ steps.string.outputs.lowercase }}"' -i flask-be/base/deployment.yml
       
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
