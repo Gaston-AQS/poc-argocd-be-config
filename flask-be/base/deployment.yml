@@ -18,4 +18,4 @@ spec:
           ports:
             - containerPort: 81
       imagePullSecrets:
-        - name: regcred
+        - name: ghcr-login-secret
