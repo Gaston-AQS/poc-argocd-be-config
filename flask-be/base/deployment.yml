@@ -16,6 +16,8 @@ spec:
         - name: flask-be
           image: ghcr.io/gaston-aqs/flask-be:13
           ports:
-            - containerPort: 5000
+            - name: flask-be
+              containerPort: 5000
+              protocol: TCP
       imagePullSecrets:
         - name: ghcr-login-secret
