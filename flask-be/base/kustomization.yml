@@ -3,8 +3,8 @@ kind: Kustomization
 namespace: myns
 
 resources:
-- deployment.yaml
-- service.yaml
+- deployment.yml
+- service.yml
 
 commonAnnotations:
   sample-go/version: v1
