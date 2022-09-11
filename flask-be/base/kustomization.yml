@@ -5,6 +5,7 @@ namespace: flask-be
 resources:
 - deployment.yml
 - service.yml
+- ingress.yml
 
 commonAnnotations:
   sample-go/version: v1
