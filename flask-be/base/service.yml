@@ -7,6 +7,6 @@ spec:
     app: flask-be
   type: LoadBalancer
   ports:
-  - port: 81
+  - port: 5000
     protocol: TCP
     targetPort: 5000
