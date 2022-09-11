@@ -17,5 +17,3 @@ spec:
           image: ghcr.io/gaston-aqs/flask-be:10
           ports:
             - containerPort: 81
-      imagePullSecrets:
-        - name: ghcr
