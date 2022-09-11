@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: flask-be
-          image: ghcr.io/gaston-aqs/flask-be:10
+          image: ghcr.io/gaston-aqs/flask-be:12
           ports:
             - containerPort: 81
       imagePullSecrets:
