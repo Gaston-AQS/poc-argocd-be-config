@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-be
+spec:
+  selector:
+    matchLabels:
+      app: flask-be
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: flask-be
+    spec:
+      containers:
+        - name: flask-be
+          image: ghcr.io/gaston-aqs/flask-be:10
+          ports:
+            - containerPort: 81
