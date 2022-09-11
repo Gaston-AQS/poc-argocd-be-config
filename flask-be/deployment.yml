@@ -2,8 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: flask-be
-  annotations:
-    argocd-image-updater.argoproj.io/myimage.pull-secret: pullsecret:argocd/ghcr
 spec:
   selector:
     matchLabels:
