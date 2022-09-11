@@ -1,12 +1,15 @@
-apiVersion: networking.k8s.io/v1beta1
+apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: "flask-be-ingress"
+  name: flaskapp
+  annotations:
+    # Disables http redirect to https
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   rules:
   - http:
       paths:
-      - backend:
-          serviceName: "flask-be"
+      - path: /
+        backend:
+          serviceName: flask-be
           servicePort: 5000
-    host: "localhost"
